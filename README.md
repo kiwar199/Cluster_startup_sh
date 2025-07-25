@@ -1,0 +1,2 @@
+# Cluster_startup_sh
+Hadoop大数据平台常见组件启动脚本
