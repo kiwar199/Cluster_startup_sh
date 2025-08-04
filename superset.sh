@@ -2,7 +2,7 @@
 # supersetBI工具启停管理脚本
 superset_status(){
 result=`ps -ef | awk '/gunicorn/ && !/awk/{print $2}' |wc -l`
-If [[ $result -eq 0 ]] ; then
+if [[ $result -eq 0 ]] ; then
     return 0
  else 
     return 1
@@ -50,4 +50,5 @@ else
       echo "superset 正在运行"
 fi
 esac
+
 
